@@ -97,7 +97,7 @@ void Goldelox::fillRectangle(int x0, int y0, int w, int h, color_t color) {
 }
 
 void Goldelox::changeBaudRate(uint32_t baud) {
-    uint16_t bval;
+    uint16_t bval = 312;
     if (baud <= 110) {
         bval = 27271;
     } else if (baud <= 300) {
@@ -156,13 +156,13 @@ void Goldelox::openWindow(int x, int y, int w, int h) {
 void Goldelox::closeWindow() {
 }
 
-void Goldelox::windowData(color_t d) {
+void Goldelox::windowData(color_t __attribute__((unused)) d) {
     // Single word sending is not supported
 }
 
 // Caution: THIS MUST BE AN ENTIRE WINDOW'S WORTH OF DATA!!!
 
-void Goldelox::windowData(color_t *d, int len) {
+void Goldelox::windowData(color_t *d, int __attribute__((unused)) len) {
 //    if (len < _window_w * _window_h) {
 //        return;
 //    }

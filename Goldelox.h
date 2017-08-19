@@ -86,9 +86,9 @@ class Goldelox : public DisplayCore {
         void drawHorizontalLine(int x, int y, int w, color_t color);
         void drawRectangle(int x, int y, int w, int h, color_t color);
         void fillRectangle(int x, int y, int w, int h, color_t color);
-        void setRotation(uint8_t r) {};
+        void setRotation(uint8_t __attribute__((unused)) r) {};
 
-        void invertDisplay(boolean i) {};
+        void invertDisplay(boolean __attribute__((unused)) i) {};
 
         void changeBaudRate(uint32_t baud);
 
