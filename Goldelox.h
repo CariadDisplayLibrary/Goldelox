@@ -65,7 +65,7 @@ class Goldelox : public DisplayCore {
         static const uint8_t ACK            = 0x06;
         static const uint8_t NAK            = 0x15;
 
-        boolean command(uint16_t *data, uint8_t len);
+        bool command(uint16_t *data, uint8_t len);
         
 
 	public:
@@ -88,7 +88,7 @@ class Goldelox : public DisplayCore {
         void fillRectangle(int x, int y, int w, int h, color_t color);
         void setRotation(uint8_t __attribute__((unused)) r) {};
 
-        void invertDisplay(boolean __attribute__((unused)) i) {};
+        void invertDisplay(bool __attribute__((unused)) i) {};
 
         void changeBaudRate(uint32_t baud);
 

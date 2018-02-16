@@ -1,6 +1,6 @@
 #include <Goldelox.h>
 
-boolean Goldelox::command(uint16_t *data, uint8_t len) {
+bool Goldelox::command(uint16_t *data, uint8_t len) {
     for (int i = 0; i < len; i++) {
         _dev->write(data[i] >> 8);
         _dev->write(data[i] & 0xFF);
