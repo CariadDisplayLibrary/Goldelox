@@ -1,3 +1,4 @@
-Goldelox.cpp libraries/DisplayCore/Goldelox
-Goldelox.h libraries/DisplayCore/Goldelox
-examples/ libraries/DisplayCore/Goldelox
+examples libraries/DisplayCore/Goldelox
+library.json libraries/DisplayCore/Goldelox
+library.properties libraries/DisplayCore/Goldelox
+src libraries/DisplayCore/Goldelox
