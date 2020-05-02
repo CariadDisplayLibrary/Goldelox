@@ -1,9 +1,9 @@
 #ifndef _GOLDELOX_H
 #define _GOLDELOX_H
 
-#include <DisplayCore.h>
+#include <Cariad.h>
 
-class Goldelox : public DisplayCore {
+class Goldelox : public Cariad {
     private:
         Stream *_dev;
         uint16_t _width;

@@ -1,17 +1,18 @@
-Source: libdisplaycore-driver-goldelox
+Source: libcariad-driver-goldelox
 Section: main
 Priority: extra
 Maintainer: Matt Jenkins <matt@majenko.co.uk>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 
-Package: libdisplaycore-driver-goldelox
+Package: libcariad-driver-goldelox
+Replaces: libdisplaycore-driver-goldelox
 Section: main
 Architecture: all
-XBSC-Group: DisplayCore
+XBSC-Group: Cariad
 XBSC-Subgroup: Drivers
 XBSC-Subsubgroup: OLED
-Depends: libdisplaycore-core
+Depends: libcariad-core
 Provides: Goldelox.h
 Description: 4D Goldelox
  The Goldelox is a display driver chip for small displays from
